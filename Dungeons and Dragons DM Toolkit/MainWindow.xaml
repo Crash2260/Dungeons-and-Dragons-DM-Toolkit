@@ -10,9 +10,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <!--  Main Grid Breakdown  -->
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="5*" />
+            <ColumnDefinition Width="4*" />
             <ColumnDefinition Width="1*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -20,48 +21,100 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <!--  Map Area  -->
+        <!--  Map Zone  -->
         <Border
             Grid.Row="0"
             Grid.Column="0"
             Background="OrangeRed" />
 
-        <!--  Initiative Tracker  -->
-        <Border
-            Grid.Row="0"
-            Grid.RowSpan="2"
-            Grid.Column="1"
-            Background="#1f3d7a" />
+        <!--  Initiative Zone  -->
+        <Grid Grid.RowSpan="2" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
-        <!--  Bonus Zone  -->
-        <Border
-            Grid.Row="1"
-            Grid.Column="0"
-            Background="SpringGreen" />
+            <!--  Initiative Tracker  -->
+            <Border Grid.Row="0" Background="AntiqueWhite" />
 
-        <ListView
-            Name="itemListView"
-            Grid.Row="1"
-            Grid.Column="0"
-            AllowDrop="True"
-            CanDragItems="True"
-            CanReorderItems="True">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding}" />
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <!--  Buttons for adding and removing items  -->
-        <StackPanel
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            Orientation="Horizontal">
-            <Button Click="AddItemButton_Click" Content="Add Item" />
-            <Button Click="RemoveItemButton_Click" Content="Remove Item" />
-        </StackPanel>
-        <TextBox Name="newItemTextBox" />
-        <Button Click="AddItemButton_Click" Content="Add Item" />
-        <Button Click="RemoveItemButton_Click" Content="Remove Item" />
+            <!--  Initiative Button Area  -->
+            <Border Grid.Row="1" Background="DarkOliveGreen" />
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+                <Button
+                    Grid.Column="0"
+                    Width="75"
+                    Height="50"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Click="Button_Click5"
+                    Content="Click Me" />
+                <Button
+                    Grid.Column="1"
+                    Width="230"
+                    Height="50"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Click="Button_Click6"
+                    Content="Click Me" />
+            </Grid>
+        </Grid>
+
+        <!--  Stat Zone  -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!--  Stat Block Grid  -->
+            <Border Grid.Column="0" Background="Aquamarine" />
+
+            <!--  Button Layout Grid  -->
+            <Border Grid.Column="1" Background="DarkGoldenrod" />
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Button
+                    Grid.Row="0"
+                    Width="200"
+                    Height="50"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Click="Button_Click1"
+                    Content="Click Me" />
+                <Button
+                    Grid.Row="1"
+                    Width="200"
+                    Height="50"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Click="Button_Click2"
+                    Content="Click Me" />
+                <Button
+                    Grid.Row="2"
+                    Width="200"
+                    Height="50"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Click="Button_Click3"
+                    Content="Click Me" />
+                <Button
+                    Grid.Row="3"
+                    Width="200"
+                    Height="50"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Click="Button_Click4"
+                    Content="Click Me" />
+            </Grid>
+        </Grid>
     </Grid>
 </Window>

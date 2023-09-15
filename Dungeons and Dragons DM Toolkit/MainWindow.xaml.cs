@@ -32,7 +32,6 @@ namespace Dungeons_and_Dragons_DM_Toolkit
         public MainWindow()
         {
             this.InitializeComponent();
-            itemListView.ItemsSource = itemList;
 
         }
 
@@ -70,22 +69,35 @@ namespace Dungeons_and_Dragons_DM_Toolkit
             }
         }
 
-        private void AddItemButton_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+
+        private void Button_Click1(object sender, RoutedEventArgs e)
         {
-            string newItem = newItemTextBox.Text;
-            if (!string.IsNullOrWhiteSpace(newItem))
-            {
-                itemList.Add(newItem);
-                newItemTextBox.Text = string.Empty;
-            }
+            
         }
 
-        private void RemoveItemButton_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+        private void Button_Click2(object sender, RoutedEventArgs e)
         {
-            if (itemListView.SelectedItem != null)
-            {
-                itemList.Remove(itemListView.SelectedItem.ToString());
-            }
+            
+        }
+
+        private void Button_Click3(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Button_Click4(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Button_Click5(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Button_Click6(object sender, RoutedEventArgs e)
+        {
+            
         }
 
 
