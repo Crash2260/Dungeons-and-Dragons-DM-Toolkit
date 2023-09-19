@@ -50,16 +50,28 @@
                     Height="50"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
-                    Click="Button_Click5"
-                    Content="Click Me" />
+                    Click="Next_Turn">
+                    <ContentPresenter>
+                        <ContentPresenter.Content>
+                            <Image
+                                Width="45"
+                                Height="45"
+                                Source="C:\Users\crash\source\repos\Dungeons and Dragons DM Toolkit\Dungeons and Dragons DM Toolkit (Package)\Assets\nextTurnArrow.png" />
+                        </ContentPresenter.Content>
+                    </ContentPresenter>
+                </Button>
                 <Button
                     Grid.Column="1"
                     Width="230"
                     Height="50"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
-                    Click="Button_Click6"
-                    Content="Click Me" />
+                    Click="CreateNewEntity"
+                    Content="Create New Entity"
+                    FontFamily="Arial"
+                    FontSize="24"
+                    FontWeight="Bold"
+                    Foreground="Black" />
             </Grid>
         </Grid>
 
