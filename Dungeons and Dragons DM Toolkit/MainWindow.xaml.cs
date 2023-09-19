@@ -90,12 +90,12 @@ namespace Dungeons_and_Dragons_DM_Toolkit
             
         }
 
-        private void Button_Click5(object sender, RoutedEventArgs e)
+        private void Next_Turn(object sender, RoutedEventArgs e)
         {
             
         }
 
-        private void Button_Click6(object sender, RoutedEventArgs e)
+        private void CreateNewEntity(object sender, RoutedEventArgs e)
         {
             
         }
