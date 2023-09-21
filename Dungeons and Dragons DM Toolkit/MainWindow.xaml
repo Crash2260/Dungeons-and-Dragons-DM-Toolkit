@@ -27,6 +27,70 @@
             Grid.Column="0"
             Background="OrangeRed" />
 
+        <!--  Map Button Zone  -->
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Border
+                Grid.Row="1"
+                Grid.ColumnSpan="4"
+                Background="BlueViolet" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="0"
+                Width="60"
+                Height="50"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Click="Button_Click1"
+                Content="Click Me" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="0"
+                Width="60"
+                Height="50"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Click="Button_Click2"
+                Content="Click Me" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="3"
+                Width="60"
+                Height="50"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Click="Button_Click3"
+                Content="Click Me" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="3"
+                Width="60"
+                Height="50"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Click="Button_Click4"
+                Content="Click Me" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Width="200"
+                Height="50"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Click="OpenMapDisplayWindowButton_Click"
+                Content="Map Projection" />
+        </Grid>
+
         <!--  Initiative Zone  -->
         <Grid Grid.RowSpan="2" Grid.Column="1">
             <Grid.RowDefinitions>
